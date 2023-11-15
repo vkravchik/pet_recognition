@@ -33,9 +33,11 @@ Real-time pet detection and recognition with YOLO
   make -j8
   ```
   Test
-
   ```
-  ./darknet detector test cfg/pet.data cfg/yolov3-pet.cfg your-yolo-pet.weights ~/Your-dataset/JPEGImages/havanese_102.jpg 
+  cd darknet 
+  ```
+  ```
+  ./darknet detector test cfg/pet.data cfg/yolov2-tiny-pet_40000.cfg backup/yolov2-tiny-pet_40000.weights ../JPEGImages/your_img.jpeg 
   ```
   
   There will be an image named `predictions.png` in your darknet root directory.
